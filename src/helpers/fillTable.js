@@ -1,4 +1,4 @@
-export default ({width, height}) => {
+const fillTable = ({width, height}) => {
     const table = [];
 
     for(let i = 0; i < height; i++) {
@@ -11,3 +11,5 @@ export default ({width, height}) => {
     
     return table;
 };
+
+export default fillTable;
