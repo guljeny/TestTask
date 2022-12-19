@@ -2,9 +2,13 @@ import { useEffect, useState } from "react";
 
 import './styles.css';
 
+import getTableSizeFromURL from "./helpers/getTableSizeFromURL";
+import fillTable from './helpers/fillTable';
+
+const tableSize = getTableSizeFromURL();
 
 export const App = () => {
-  const grid = [['First cell']];
+  const grid = fillTable(tableSize);
 
   return (
     <div>
